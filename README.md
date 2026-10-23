@@ -218,5 +218,4 @@ This project is intended for educational and demonstration purposes. Its predict
 ## License
 
 No license is specified. Add a `LICENSE` file if you plan to distribute or allow reuse of this project.
-"""
 
