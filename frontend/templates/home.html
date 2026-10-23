@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+  <title>SMART GRID</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background: url('{% static "images/ho1.jpg" %}') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .jumbotron {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      padding: 40px 20px;
+      margin-bottom: 40px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      width: 320px;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #343a40;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .feature-section {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    .feature-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 20px;
+      height: 100%;
+      color: #333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .feature-text {
+      font-size: 1rem;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Flood Monitoring Using Machine Learning</h1>
+    </div>
+
+    <!-- Main Feature Card -->
+    <div class="card-container">
+      <a href="{% url 'index' %}">
+        <div class="card">
+          <img src="{% static 'images/ho.jpg' %}" alt="Flood Monitoring">
+          <div class="card-body">
+            <h5 class="card-title">Flood Monitoring</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Three Info Boxes Below -->
+    <div class="row feature-section">
+      <div class="col-md-4 mb-4">
+        <div class="feature-card">
+          <div class="feature-title">Real-Time Alerts</div>
+          <div class="feature-text">
+            Stay informed with instant alerts through SMS and email notifications. Get updates on rainfall, water levels, and potential risks to take timely actions.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-card">
+          <div class="feature-title">Data Analytics</div>
+          <div class="feature-text">
+            Analyze historical and real-time data using advanced charts and machine learning to predict flood-prone areas and trends effectively.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-card">
+          <div class="feature-title">Risk Prediction</div>
+          <div class="feature-text">
+            Our model forecasts flood risks based on climate data, river levels, and terrain. This helps local authorities in disaster preparedness and resource allocation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock content %}
