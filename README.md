@@ -6,12 +6,6 @@ A web-based flood monitoring and prediction application built with **Python, Dja
 
 ▶️ **YouTube Demo:** [Watch the project demonstration](https://youtu.be/yL9WzXNX0S8?si=mWsyY7VJs3m2cw6W)
 
-## Application Screenshot
-
-![Flood Monitoring Using Machine Learning application screenshot](frontend/static/images/flood-prediction.png)
-
-> If the screenshot does not appear on GitHub, confirm that `flood-prediction.png` is committed at `frontend/static/images/flood-prediction.png`.
-
 ## Dataset
 
 📊 **Kaggle Dataset:** [Flood Monitoring Using Machine Learning](https://www.kaggle.com/datasets/yuvashrisankar/flood-monitoring-using-machine-learning)
