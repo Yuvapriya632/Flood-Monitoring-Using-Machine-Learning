@@ -1,6 +1,4 @@
-from pathlib import Path
 
-content = r"""# Flood Monitoring Using Machine Learning
 
 A web-based flood monitoring and prediction application built with **Python, Django, and Machine Learning**. The project uses a trained K-Nearest Neighbors (KNN) model to generate predictions from user-provided input through a web interface.
 
